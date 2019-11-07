@@ -1,0 +1,193 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.menu-item {
+	float: left;
+}
+
+li a {
+	display: block;
+	/*color: #EF705F;*/
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.link a {
+	/*border-bottom: 2.5px solid white;*/
+	font-family: 'Be Vietnam', sans-serif;
+	color: black;
+}
+
+#work-link a {
+	/*border-bottom: 2.5px solid #EF705F;*/
+	color: #EF705F;
+}
+
+
+.link a:hover{
+	transition: 0.3s;
+	color: #EF705F;
+}
+
+#about, #work, #resume {
+	float:right;
+}
+
+#resume {
+	margin-right: 20px;
+}
+
+#work-nav {
+	margin-top: 80px;
+}
+
+.work-link {
+	margin-bottom: 30px;
+}
+
+.work-link a {
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 4em;
+}
+
+#product a {
+	color: #EF705F;
+  	-webkit-text-fill-color: white;
+  	-webkit-text-stroke-width: 1.75px;
+  	-webkit-text-stroke-color: #EF705F;
+}
+
+#graphics a {
+	color: #F2A541;
+	-webkit-text-fill-color: white;
+  	-webkit-text-stroke-width: 1.75px;
+  	-webkit-text-stroke-color: #F2A541;
+}
+
+#photo a {
+	color: #577590;
+	-webkit-text-fill-color: white;
+  	-webkit-text-stroke-width: 1.75px;
+  	-webkit-text-stroke-color: #577590;
+}
+
+
+/* Following hover effect code adapted from https://codepen.io/tsimenis/pen/BKdENX */
+
+span {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+#product span {
+	width: 475px;
+}
+
+#graphics span {
+	width: 435px;
+}
+
+#photo span {
+	width: 400px;
+}
+
+span:before, span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  top: 50%;
+  margin-top: 8px;
+  background: #fff;
+}
+
+span:before {
+  left: -2.5px;
+}
+
+#product span:after {
+  right: 2.5px;
+  background: #EF705F;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#product span:hover:before {
+  background: #EF705F;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#graphics span:after {
+  right: 2.5px;
+  background: #F2A541;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#graphics span:hover:before {
+  background: #F2A541;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#photo span:after {
+  right: 2.5px;
+  background: #577590;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#photo span:hover:before {
+  background: #577590;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span:hover:after {
+  width: 100%;
+  transition: 0s;
+}
+
+/***********************************/
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 600px) {
+	html,body {
+	    overflow-x: hidden;
+	    overflow-y: hidden;
+	}
+
+	.work-link a {
+		font-size: 2.5em;
+	}
+
+	#product span {
+		width: 300px;
+	}
+
+	#graphics span {
+		width: 180px;
+	}
+
+	#photo span {
+		width: 250px;
+	}
+
+	.work-link {
+		margin-bottom: 80px;
+	}
+}

@@ -1,0 +1,288 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.menu-item {
+	float: left;
+}
+
+li a {
+	display: block;
+	/*color: #EF705F;*/
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav {
+	margin-top: 10px;
+	margin-left: 20px;
+}
+
+.link a {
+	/*border-bottom: 2.5px solid white;*/
+	font-family: 'Be Vietnam', sans-serif;
+	color: black;
+}
+
+#about-link a {
+	/*border-bottom: 2.5px solid #EF705F;*/
+	color: #EF705F;
+}
+
+
+.link a:hover{
+	transition: 0.3s;
+	color: #EF705F;
+}
+
+#about, #work, #resume {
+	float:right;
+}
+
+#resume {
+	margin-right: 20px;
+}
+
+#photo-container {
+	width: 600px;
+	height: 500px;
+	/*position: relative;*/
+	margin-top: 30px;
+	/*top: 75px;
+	left: 185px;*/
+}
+
+#photo-container img {
+	height: 100%;
+ 	width: 100%;
+ 	object-fit: cover;
+}
+
+.title-text {
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 3em;
+	margin-top: 85px;
+	font-weight: 500;
+	color: #EF705F;
+	text-align: center;
+}
+
+.paragraph-text {
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	line-height: 160%;
+	margin-top: 20px;
+}
+
+#intro-title {
+	text-align: left;
+	margin-top: 50px;
+}
+
+#intro-text {
+	text-align: left;
+	width: 425px;
+}
+
+#text {
+	margin-left: 50px;
+}
+
+#intro {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.org a {
+	text-decoration: none;
+	font-weight: 500;
+	color: #EF705F;
+}
+
+#spheres-text {
+	width: 550px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 70px;
+	font-size: 1em;
+	text-align: left;
+}
+
+/*#motivations-text {
+	width: 625px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 70px;
+	font-size: 1em;
+	text-align: left;
+}
+
+.motivation-subtitle {
+	font-weight: 600;
+	font-size: 1.5em;
+	padding-top: 20px;
+	color: #EF705F;
+}
+
+.motivation-par {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}*/
+
+#spheres-image {
+	width: 600px;
+	height: 500px;
+	margin: 0 auto;
+}
+
+.capabilities-title {
+	margin-top: 100px;
+}
+
+.skills-title {
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 1.5em;
+	margin-top: 75px;
+	margin-bottom: 20px;
+	font-weight: 500;
+	color: #EF705F;
+	text-align: center;
+}
+
+#spheres-image img, .skills-image img, .icon img {
+	height: 100%;
+ 	width: 100%;
+ 	object-fit: cover;
+}
+
+#image-1 {
+	height: 300px;
+	padding-top: 10px;
+}
+
+#image-2 {
+	height: 220px;
+	padding-top: 35px;
+	padding-bottom: 10px;
+}
+
+#image-3 {
+	height: 150px;
+}
+
+.skills-image {
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+#contact-me {
+	background-color: #EF705F;
+	width: 120px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: center;
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 1.15em;
+	margin: 0 auto;
+	border-radius: 25px;
+	margin-top: 75px;
+}
+
+#contact-container a {
+	text-decoration: none;
+	color: white;
+}
+
+#icons-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	margin-bottom: 80px;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 600px) {
+
+	#spheres-image {
+		width: 350px;
+		height: 300px;
+		margin: 0 auto;
+	}
+
+	#photo-container {
+		width: 350px;
+		height: 300px;
+		/*position: relative;*/
+		margin-top: 30px;
+		/*top: 75px;
+		left: 185px;*/
+	}
+
+	#intro-title, .title-text {
+		margin-top: 45px;
+	}
+
+	#text {
+		margin-left: 0px;
+	}
+
+	#intro-text, #spheres-text {
+		width: 300px;
+	}
+
+	#motivations-title {
+		width: 300px;
+		margin: 0 auto;
+		margin-top: 60px;
+		padding-bottom: 10px;
+	}
+
+	#motivations-text {
+		width: 300px;
+	}
+
+	.skills-image {
+		width: 350px;
+	}
+
+	#image-1 {
+		height: 200px;
+	}
+
+	#image-2 {
+		height: 120px;
+	}
+
+	#image-3 {
+		height: 100px;
+	}
+
+	.skills-image {
+		width: 350px;
+		margin: 0 auto;
+		padding-top: 30px;
+	}
+}

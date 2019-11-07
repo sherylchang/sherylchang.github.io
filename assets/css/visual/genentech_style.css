@@ -1,0 +1,193 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.menu-item {
+	float: left;
+}
+
+li a {
+	display: block;
+	/*color: #F2A541;*/
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.link a {
+	/*border-bottom: 2.5px solid white;*/
+	font-family: 'Be Vietnam', sans-serif;
+	color: black;
+}
+
+#work-link a {
+	/*border-bottom: 2.5px solid #EF705F;*/
+	color: #F2A541;
+}
+
+
+.link a:hover{
+	transition: 0.3s;
+	color: #F2A541;
+}
+
+#about, #work, #resume {
+	float:right;
+}
+
+#resume {
+	margin-right: 20px;
+}
+
+#content-container {
+	margin: 0 auto;
+	width: 650px;
+	font-family: 'Be Vietnam', sans-serif;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-bottom: 50px;
+}
+
+#title {
+	font-size: 2.5em;
+	font-weight: 600;
+	position: relative;
+	display: inline-block;
+}
+
+#title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #F2A541;
+  left: 0;
+  bottom: -3px;
+  height: .5em;
+  z-index: -1;
+  margin-left: 10px;
+}
+
+#title-container {
+	width: 650px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+#back-arrow {
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+#back-arrow a {
+	text-decoration: none;
+	color: black;
+}
+
+#back-arrow-text {
+	padding-bottom: 3px;
+	border-bottom: solid black 2px;
+}
+
+#back-arrow:hover {
+	opacity: 50%;
+	transition-duration: 0.3s;
+}
+
+.subtitle {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+#intro {
+	margin-top: 40px;
+}
+
+.intro-info {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.section-title {
+	font-size: 2em;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+
+.section-text {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	line-height: 160%;
+}
+
+.image-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 650px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.shadow {
+	box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+	width: 310px;
+	margin-right: 15px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+
+.full-width {
+	width: 650px;
+	margin: 0 auto;
+}
+
+.image img {
+	height: 100%;
+ 	width: 100%;
+ 	object-fit: cover;
+}
+
+.image-label {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+#resize img {
+	display: block;
+  	max-width:650px;
+  	width: auto;
+  	height: auto;
+}
+
+#resize-2 img {
+	display: block;
+  	max-width:310px;
+  	width: auto;
+  	height: auto;
+}

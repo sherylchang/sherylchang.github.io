@@ -1,0 +1,195 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+#page-container {
+	display: flex;
+	flex-direction: column;
+	height: 100vh; 
+	flex-wrap: wrap;
+}
+
+#home-container, #about-container, #work-container {
+	width: 50vw;
+	display: flex;
+	flex-direction: column;
+}
+
+#home-container {
+	background: #EF705F;
+	height: 100vh;
+}
+
+#about-container {
+	background: #F2A541;
+	height: 50vh;
+}
+
+#work-container {
+	background: #577590;
+	height: 50vh;
+}
+
+#home-button a, #home-header, #home-text, .header, .text {
+	font-family: 'Be Vietnam', sans-serif;
+	color: white;
+}
+
+#home-button, #home-header, #home-text, .header, .text {
+	/*align-items: flex-start;*/
+	margin-left: 50px;
+}
+
+#home-button {
+	margin-top: 30px;
+	position: absolute;
+}
+
+a {
+	text-decoration: none;
+}
+
+#home-header {
+	font-size: 3.5em;
+	font-weight: 500;
+}
+
+#home-text {
+	font-size: 1.2em;
+	margin-top: 15px;
+	margin-right: 10px;
+	margin-bottom: 70px;
+}
+
+.header {
+	font-size: 2em;
+	font-weight: 500;
+}
+
+.text {
+	font-size: 1em;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+#home-image {
+	width: 350px;
+	height: 400px;
+}
+
+#home-image, .image {
+	margin: auto;
+}
+
+#home-image img, .image img {
+	height: 100%;
+ 	width: 100%;
+ 	object-fit: cover;
+}
+
+#about-image {
+	width: 350px;
+	height: 190px;
+}
+
+#work-image {
+	width: 450px;
+	height: 150px;
+}
+
+.image {
+	margin-top: 50px;
+}
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 600px) {
+
+	html, body {
+		margin: 0px;
+		padding: 0px;
+		overflow-x: hidden;
+		overflow-y: visible;
+	}
+
+	#page-container {
+		height: auto;
+	}
+
+	#home-container, #about-container, #work-container {
+		width: 100vw;
+		height: 50vh;
+	} 
+
+	#home-header {
+		font-size: 2em;
+		font-weight: 600;
+		margin: auto;
+	}
+
+	#home-text {
+		font-size: .75em;
+		padding-top: 10px;
+		margin-right: 10px;
+		padding-bottom: 40px;
+		margin: auto;
+		text-align: center;
+		width: 275px;
+		line-height: 25px;
+	}
+
+	.header {
+		font-size: 2em;
+		font-weight: 600;
+		margin: auto;
+		margin-bottom: -50px;
+		margin-top: -30px;
+	}
+
+	.text {
+		font-size: .75em;
+		margin-right: 10px;
+		margin-bottom: 40px;
+		margin: auto;
+		text-align: center;
+		width: 275px;
+		padding-top: 10px;
+		line-height: 25px;
+	}
+
+	#home-image {
+		margin-top: 50px;
+		width: 100px;
+		height: 150px;
+	}
+
+	#about-image {
+		width: 200px;
+		height: 120px;
+	}
+
+	#work-image {
+		width: 250px;
+		height: 80px;
+		margin-top: 70px;
+	}
+
+	.image {
+		margin-top: 50px;
+		margin: auto;
+	}
+
+	#home-button a {
+		text-decoration: none;
+		margin-top: 30px;
+		margin-bottom: 20px;
+		font-size: 0.75em;
+	}
+
+	#work-header {
+		margin-bottom: -60px;
+	}
+}
