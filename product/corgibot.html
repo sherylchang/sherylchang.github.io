@@ -5,17 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Be+Vietnam:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="../assets/css/product/corgibot_style.css">
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 </head>
 <body>
 	<div id="page-container">
+		<div id="scroll-bar"></div>
 		<div id="nav-bar">
 				<nav>
+					<div id="mobile-only-nav-button" onclick="toggleNav()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
 					<ul id="menu">
 						<li id="home" class="menu-item">
 							<div class="link"><a href="../index.html">Sheryl Chang</a></div>
 						</li>
 						<li id="resume" class="menu-item">
-							<div class="link"><a href="assets/files/resume.pdf" target="_blank">Resume</a></div>
+							<div class="link"><a href="../assets/files/Sheryl-Chang-Resume.pdf" target="_blank">Resume</a></div>
 						</li>
 						<li id="work" class="menu-item">
 							<div id="work-link" class="link"><a href="../work.html">Work</a></div>
@@ -26,6 +33,19 @@
 					</ul>
 				</nav>
 		</div>
+		<div id="mobile-only-nav-bar">
+			<div id="nav-text">
+				<ul>
+			        <li class="mobile-link"><a href="../index.html">Home</a></li>
+			        <li class="mobile-link"><a href="../about.html">About</a></li>
+			        <li class="mobile-link"><a href="../work.html">Work</a></li>
+			        <li class="mobile-link"><a href="../assets/files/Sheryl-Chang-Resume.pdf" target="_blank">Resume</a></li>
+			    </ul>
+			    <div id="email">
+			    	sheryl.chang@berkeley.edu
+			    </div>
+		    </div>
+		</div>
 		<div id="title-container">
 			<div id="back-arrow">
 				<a href="../product.html">&#8592;  <span id="back-arrow-text">Back</span></a>
@@ -34,7 +54,7 @@
 				Corgi-Bot
 			</div>
 			<div class="image-container">
-				<div class="image" style="width: 650px; margin-top: 20px;">
+				<div id="cover-image">
 					<img src="../assets/img/corgibot/photoshop.png">
 				</div>
 			</div>
@@ -64,7 +84,7 @@
 				<b>Corgi-Bot is a mobile, corgi-shaped robot on the UC Berkeley campus that delivers physical messages to people.</b> Users can use the Corgi-Bot app to write and send a message to a friend and choose the message's on-campus pick-up location.
 			</div>
 			<div class="section-text">
-				While conducting user interviews for initial user research, my friend told me that she enjoyed running into friends on campus and seeing a cappella groups perform on Sproul. After affinity mapping with my team, we generated the key project insight that people relish having "good hindrances” while traveling through campus, which led to Corgi-Bot's creation. I further led our usability testing phase and created the screens for our app prototype to get feedback from our target audience.
+				While conducting user interviews for initial user research, my friend told me that she enjoyed running into friends on campus and seeing a cappella groups perform on Sproul. After affinity mapping with my team, we generated the key project insight that people relish having "good hindrances" while traveling through campus, which led to Corgi-Bot's creation. I further led our usability testing phase and created the screens for our app prototype to get feedback from our target audience.
 			</div>
 			<div class="section-text">
 				If I could've done this project again, I would've made the Corgi-Bot app interface more high fidelity, fleshed out the product interaction more, and tested out the pick-up location interaction with users. 
@@ -120,7 +140,7 @@
 					<img src="../assets/img/corgibot/hannah.jpg">
 					<div class="image-label">Hannah</div>
 				</div>
-				<div class="full-width image" style="margin-bottom: 80px;">
+				<div id="mindmap" class="full-width image shadow" style="margin-bottom: 80px;">
 					<img src="../assets/img/corgibot/mindmap.jpg">
 					<div class="image-label">Jemma's mindmap (on-campus transportation & transportation to/from campus)</div>
 				</div>
@@ -128,9 +148,9 @@
 			<div class="section-text">
 				Here are some key quotes:
 				<ol>
-					<li><b>Jemma:</b> "I think it's nice to <b>run into friends and see events happening</b> on campus while walking.”</li>
-					<li><b>Isabella:</b> "In the studio, students are always around at night, and we <b>talk to each other and try to make light of the difficult situation together</b>.”</li>
-					<li><b>Jennifer:</b> "Disabled people do not like taking public transportation because it <b>makes them feel like a public spectacle</b>. They feel like they're holding everyone up.”</li>
+					<li><b>Jemma:</b> "I think it's nice to <b>run into friends and see events happening</b> on campus while walking."</li>
+					<li><b>Isabella:</b> "In the studio, students are always around at night, and we <b>talk to each other and try to make light of the difficult situation together</b>."</li>
+					<li><b>Jennifer:</b> "Disabled people do not like taking public transportation because it <b>makes them feel like a public spectacle</b>. They feel like they're holding everyone up."</li>
 				</ol>
 			</div>
 			
@@ -147,11 +167,11 @@
 				We created several 2x2 matrices to see where existing solutions lie and what opportunity spaces were available.
 			</div>
 			<div class="image-container">
-				<div class="full-width image" style="margin-bottom: 80px; height: 300px;">
+				<div id="matrix-1" class="full-width image">
 					<img class="shadow" src="../assets/img/corgibot/matrix-1.png">
 					<div class=image-label>Drawn by Beatrice Bui</div>
 				</div>
-				<div class="full-width image" style="margin-bottom: 80px; height: 350px;">
+				<div id="matrix-2" class="full-width image">
 					<img class="shadow" src="../assets/img/corgibot/matrix-2.png">
 					<div class="image-label">Drawn by Beatrice Bui</div>
 				</div>
@@ -166,11 +186,11 @@
 				We also created user journeys to dig deeper into each phase of users' journeys. We wanted to better understand their thoughts and feelings and see if there were any opportunity spaces we could uncover.
 			</div>
 			<div class="image-container">
-				<div class="full-width image" style="margin-bottom: 80px; height: 375px;">
+				<div id="user-journey-1" class="full-width image">
 					<img class="shadow" src="../assets/img/corgibot/user-journey-avg.png">
 					<div class=image-label>Done by me</div>
 				</div>
-				<div class="full-width image" style="margin-bottom: 80px; height: 300px;">
+				<div id="user-journey-2" class="full-width image">
 					<img class="shadow" src="../assets/img/corgibot/user-journey-disabled.png">
 					<div class="image-label">Drawn by Beatrice Bui</div>
 				</div>
@@ -185,8 +205,8 @@
 				<div class="full-width image">
 					<img src="../assets/img/corgibot/affinity-map-2.jpg">
 				</div>
-				<div class="full-width image shadow">
-					<img src="../assets/img/corgibot/affinity-map-final.png">
+				<div class="full-width image">
+					<img class="shadow" src="../assets/img/corgibot/affinity-map-final.png">
 				</div>
 			</div>
 			<div class="section-text" style="margin-top: 20px;">
@@ -219,7 +239,7 @@
 			</div>
 			<div class="section-text">
 				<li>HMW create an environment that <b>cultivates mindfulness</b>?</li>
-				<li>HMW include <b>"good hindrances”</b> into users' commutes?</li>
+				<li>HMW include <b>"good hindrances"</b> into users' commutes?</li>
 				<li>HMW use community as a framework to <b>mitigate social stigma or harassment</b>?</li>
 			</div>
 			<div class="image-container">
@@ -251,15 +271,15 @@
 				</ol>
 			</div>
 			<div class="image-container">
-				<div class="full-width image" style="margin-bottom: 80px; height: 505px;">
+				<div id="reconnection" class="full-width image">
 					<img src="../assets/img/corgibot/idea1.jpg">
 					<div class=image-label>Reconnection (drawn by Ru-Ping Chen)</div>
 				</div>
-				<div class="full-width image" style="margin-bottom: 80px; height: 505px;">
+				<div id="bus-stops" class="full-width image shadow">
 					<img src="../assets/img/corgibot/idea2.jpg">
 					<div class="image-label">Themed bus stops (drawn by Beatrice Bui)</div>
 				</div>
-				<div class="full-width image" style="margin-bottom: 80px; height: 500px;">
+				<div id="mail-pal" class="full-width image">
 					<img src="../assets/img/corgibot/idea3.jpg">
 					<div class="image-label">Mail Pal (drawn by me)</div>
 				</div>
@@ -281,7 +301,7 @@
 				We prepared two different interfaces, a <b>voice activation interface</b> and a <b>screen interface</b>.
 			</div>
 			<div class="image-container">
-				<div class="full-width image" style="margin-bottom: 80px; height: 120px;">
+				<div id="mailbox-screens" class="full-width image">
 					<img src="../assets/img/corgibot/mailbox-screens.png">
 					<div class=image-label>Mailbox screens</div>
 				</div>
@@ -351,10 +371,10 @@
 				<div class="image">
 					<img src="../assets/img/corgibot/corgi-bot-testing-2.jpg">
 				</div>
-				<div class="image full-width">
+				<div class="image">
 					<img src="../assets/img/corgibot/corgi-bot-testing-1.jpg">
 				</div>
-				<div class="image full-width">
+				<div class="image">
 					<img src="../assets/img/corgibot/corgi-bot-testing-4.jpg">
 				</div>
 			</div>
@@ -391,11 +411,11 @@
 				Here are a beautiful graphic and storyboard of our final product done by Beatrice.
 			</div>
 			<div class="image-container">
-				<div class="image full-width" style="height: 400px;margin-bottom: 70px;">
+				<div id="final-graphic" class="image full-width">
 					<img src="../assets/img/corgibot/final-graphic.jpg">
 					<div class="image-label">Drawn by Beatrice Bui</div>
 				</div>
-				<div class="image full-width" style="height: 1000px; margin-bottom: 70px;">
+				<div id="storyboard" class="image full-width shadow">
 					<img src="../assets/img/corgibot/storyboard.jpg">
 					<div class="image-label">Drawn by Beatrice Bui</div>
 				</div>
@@ -407,7 +427,7 @@
 				See the interaction <span class="source"><a href="https://xd.adobe.com/view/46a3dc13-c350-452f-5158-41410e22a4da-3092/?fullscreen" target="_blank">here</a></span>.
 			</div>
 			<div class="image-container">
-				<div class="image full-width" style="height: 540px;">
+				<div id="final-screens" class="image full-width">
 					<img src="../assets/img/corgibot/final-screens.png">
 					<div class="image-label">Done by me</div>
 				</div>
@@ -434,7 +454,7 @@
 			<div class="section-text" style="margin-bottom: 50px;">
 				<ol>
 					<li>This project was the first time I did synthesis, and <b>I learned that affinity diagramming and other methods of synthesis can uncover a lot of interesting insights, themes, and opportunity spaces.</b></li>
-					<li>TI felt a little lost throughout this project -- I never knew exactly where we were going and what was going to happen next. It was a little scary for me not to feel in control, but I learned that this is just how the design process is. <b>It's normal for the process to be messy, and I should learn to be okay with not knowing exactly what's going on.</b></li>
+					<li>I felt a little lost throughout this project -- I never knew exactly where we were going and what was going to happen next. It was a little scary for me not to feel in control, but I learned that this is just how the design process is. <b>It's normal for the process to be messy, and I should learn to be okay with not knowing exactly what's going on.</b></li>
 				</ol>
 			</div>
 
@@ -443,5 +463,9 @@
 		</div>
 
 	</div>
+
+	<!-- JavaScript tag -->
+	<script src="../assets/js/product_script.js"></script>
+	
 </body>
 </html>

@@ -60,7 +60,7 @@ a {
 #home-text {
 	font-size: 1.2em;
 	margin-top: 15px;
-	margin-right: 10px;
+	margin-right: 100px;
 	margin-bottom: 70px;
 }
 
@@ -192,4 +192,58 @@ a {
 	#work-header {
 		margin-bottom: -60px;
 	}
+}
+
+/* Monitors */
+@media only screen and (min-width: 1700px) {
+
+	html, body {
+		margin: 0px;
+		padding: 0px;
+		overflow-x: hidden;
+		overflow-y: visible;
+	}
+
+	#home-button {
+		font-size: 1.7em;
+	}
+
+	#home-header {
+		font-size: 6em;
+		font-weight: 500;
+	}
+
+	#home-text {
+		font-size: 2.5em;
+	}
+
+	#home-image {
+		width: 450px;
+		height: 500px;
+		padding-top: 70px;
+	}
+
+	#about-image {
+		width: 425px;
+		height: 235px;
+		padding-top: 10px;
+	}
+
+	#work-image {
+		width: 550px;
+		height: 225px;
+		padding-top: 45px;
+	}
+
+	.header {
+		font-size: 4em;
+		font-weight: 500;
+	}
+
+	.text {
+		font-size: 1.8em;
+		margin-right: 30px;
+		margin-bottom: 50px;
+	}
+
 }

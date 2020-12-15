@@ -1,0 +1,432 @@
+html,body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Be Vietnam', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+.menu-item {
+	float: left;
+}
+
+li a {
+	display: block;
+	/*color: #577590;*/
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+nav {
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+#fixed-nav {
+	position: fixed;
+	right: 0;
+}
+
+.link a {
+	/*border-bottom: 2.5px solid white;*/
+	font-family: 'Be Vietnam', sans-serif;
+	color: black;
+}
+
+#work-link a {
+	/*border-bottom: 2.5px solid #EF705F;*/
+	color: #577590;
+}
+
+
+.link a:hover{
+	transition: 0.3s;
+	color: #577590;
+}
+
+#about, #work, #resume {
+	float:right;
+}
+
+#resume {
+	margin-right: 20px;
+}
+
+#content-container {
+	/*margin: 0 auto;*/
+	font-family: 'Be Vietnam', sans-serif;
+	display: flex;
+	/*flex-wrap: wrap;*/
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 395px;
+}
+
+#title {
+	font-size: 2.5em;
+	font-weight: 600;
+	position: relative;
+	display: inline-block;
+}
+
+#title::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background: #577590;
+  left: 0;
+  bottom: -3px;
+  height: .5em;
+  z-index: -1;
+  margin-left: 10px;
+}
+
+#title-container {
+	margin-left: 395px;
+	margin-top: 50px;
+	margin-bottom: 15px;
+}
+
+#back-arrow {
+	margin-bottom: 25px;
+	cursor: pointer;
+}
+
+#back-arrow a {
+	text-decoration: none;
+	color: black;
+}
+
+#back-arrow-text {
+	padding-bottom: 3px;
+	border-bottom: solid black 2px;
+}
+
+#back-arrow:hover {
+	opacity: 50%;
+	transition-duration: 0.3s;
+}
+
+.subtitle {
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 1.25em;
+	font-style: italic;
+}
+
+#intro {
+	margin-top: 40px;
+}
+
+.intro-info {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.section-title {
+	font-size: 2em;
+	margin-top: 40px;
+	margin-bottom: 15px;
+	font-weight: 600;
+}
+
+.section-text {
+	margin-top: 5px;
+	margin-bottom: 15px;
+	line-height: 160%;
+}
+
+.image-container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+.shadow {
+	box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.horizontal-image {
+	height: 375px;
+	width: 475px;
+	margin-right: 20px;
+	padding-top: 5px;
+}
+
+.vertical-image {
+	height: 375px;
+	width: 300px;
+	margin-right: 20px;
+	padding-top: 5px;
+}
+
+/*.full-width {
+	width: 650px;
+	margin: 0 auto;
+}*/
+
+.vertical-image img {
+	height: 100%;
+ 	width: 100%;
+ 	object-fit: cover;
+}
+
+.horizontal-image img {
+	height: 100%;
+ 	width: 100%;
+ 	object-fit: cover;
+}
+
+.image-label {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-style: italic;
+	font-size: 0.9em;
+}
+
+#resize img {
+	display: block;
+  	/*max-width:650px;*/
+  	width: auto;
+  	height: auto;
+}
+
+#resize-2 img {
+	display: block;
+  	max-width:310px;
+  	width: auto;
+  	height: auto;
+}
+
+#scroll-bar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: var(--bar-width);
+	height: 16px;
+	background: #577590;
+}
+
+/*mobile only nav bar styling*/
+
+#mobile-only-nav-button {
+	margin-top: 10px;
+	float: right;
+	right: 15px;
+	z-index: 10;
+	position: fixed;
+	/*mobile only*/
+	display: none;
+}
+
+.bar1, .bar2, .bar3 {
+	width: 25px;
+	height: 2px;
+	background-color: #577590;
+	margin-top: 5px;
+	transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.button-switch .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-7px, 6px);
+	-moz-transform: rotate(-45deg) translate(-7px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
+    background-color: white;
+}
+
+.button-switch .bar2 {
+	opacity: 0;
+}
+
+.button-switch .bar3 {
+	-webkit-transform: rotate(45deg) translate(-4px, -3px);
+	-moz-transform: rotate(45deg) translate(-4px, -3px);
+	transform: rotate(45deg) translate(-4px, -3px);
+	background-color: white;
+}
+
+#mobile-only-nav-bar {
+	/*position: absolute;*/
+	background-color: #577590;
+	color: white;
+	font-family: 'Be Vietnam', sans-serif;
+	position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 1;
+    height: 0%;
+    overflow-x: hidden;
+    transition: 0.4s;
+    -webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	/*mobile only*/
+	display: none;
+}
+
+/*#mobile-only-nav-bar .open-nav {
+	display: block;
+}*/
+
+#nav-text {
+	position: absolute;
+	top: 45%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.mobile-link a {
+	color: white;
+	text-align: center;
+	margin-top: -5px;
+	margin-bottom: -5px;
+	font-size: 2em;
+}
+
+#email {
+	margin-top: 75px;
+	text-align: center;
+	color: #577590;
+	width: 240px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: white;
+	font-weight: 500;
+}
+
+.no-scroll {
+	overflow: hidden;
+}
+
+
+/* Extra small devices (phones, 450px and down) */
+@media only screen and (max-width: 600px) {
+	nav {
+		padding-left: 7px;
+	}
+
+	#fixed-nav {
+		position: static;
+	}
+
+	li a {
+		padding: 7px 7px;
+	}
+
+	#resume {
+		margin-right: 7px;
+	}
+
+	#content-container {
+		margin: 0 auto;
+		width: 275px;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: flex-start;
+		margin-bottom: 20px;
+	}
+
+	#title-container {
+		width: 275px;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 15px;
+	}
+
+	.image-container {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		width: 275px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.horizontal-image {
+		height: 200px;
+		width: 275px;
+		margin-right: 20px;
+		padding-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	.vertical-image {
+		/*height: 375px;*/
+		width: 275px;
+		margin-right: 20px;
+		padding-top: 5px;
+		margin-bottom: 10px;
+	}
+
+	#scroll-bar {
+		width: 5px;
+		height: var(--bar-height);
+	}
+
+	/*different nav bar*/
+	#mobile-only-nav-button {
+		display: block;
+	}
+
+	#mobile-only-nav-bar {
+		display: block;
+	}
+
+	#resume, #work,#about {
+		display: none;
+	}
+
+}
+
+
+/* Monitors */
+@media only screen and (min-width: 1700px) {
+
+	#page-container {
+		overflow-x: scroll;
+    	overflow-y: hidden;
+	}
+
+	#title-container {
+		width: 1100px;
+		font-size: 1.8em;
+		margin-bottom: 60px;
+	}
+
+	.link {
+		font-size: 1.7em;
+	}
+
+	.link a {
+		padding: 20px 20px;
+	}
+
+	.horizontal-image {
+		height: 550px;
+		width: 725px;
+		margin-right: 20px;
+		padding-top: 5px;
+	}
+
+	.vertical-image {
+		height: 550px;
+		width: 425px;
+		margin-right: 20px;
+		padding-top: 5px;
+	}
+
+}

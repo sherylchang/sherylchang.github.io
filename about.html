@@ -5,17 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Be+Vietnam:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/about_style.css">
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 </head>
 <body>
 	<div id="page-container">
 		<div id="nav-bar">
 				<nav>
+					<div id="mobile-only-nav-button" onclick="toggleNav()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
 					<ul id="menu">
 						<li id="home" class="menu-item">
-							<div class="link"><a href="index.html">Sheryl Chang</a></div>
+							<div id="home-button" class="link"><a href="index.html">Sheryl Chang</a></div>
 						</li>
 						<li id="resume" class="menu-item">
-							<div class="link"><a href="assets/files/resume.pdf" target="_blank">Resume</a></div>
+							<div class="link"><a href="assets/files/Sheryl-Chang-Resume.pdf" target="_blank">Resume</a></div>
 						</li>
 						<li id="work" class="menu-item">
 							<div class="link"><a href="work.html">Work</a></div>
@@ -26,6 +32,19 @@
 					</ul>
 				</nav>
 		</div>
+		<div id="mobile-only-nav-bar">
+			<div id="nav-text">
+				<ul>
+			        <li class="mobile-link"><a href="index.html">Home</a></li>
+			        <li class="mobile-link"><a href="about.html">About</a></li>
+			        <li class="mobile-link"><a href="work.html">Work</a></li>
+			        <li class="mobile-link"><a href="assets/files/Sheryl-Chang-Resume.pdf" target="_blank">Resume</a></li>
+			    </ul>
+			    <div id="email">
+			    	sheryl.chang@berkeley.edu
+			    </div>
+		    </div>
+		</div>
 		<div id="intro">
 			<div id="photo-container">
 				<img src="assets/img/photo.png">
@@ -34,15 +53,21 @@
 				<div id="intro-title" class="title-text">
 					Hi! I'm Sheryl.
 				</div>
-				<div id="intro-text" class="paragraph-text">
-					I recently graduated from UC Berkeley in August with a degree in Cognitive Science and am now working as a contract designer at <span class="org"><a href="https://www.gene.com/" target="_blank">Genentech</a></span>. I'm still actively searching for full-time designer jobs though, so don't hesitate to <span class="org"><a href="mailto:sheryl.chang@berkeley.edu">reach out</a></span>.
-
-					In terms of what motivates me, I love a good challenge. And people - they are and have always been very important to me. I always find having a positive impact on others very exciting.
-
-					In my time at Berkeley, I've been a TA for the <span class="org"><a href="https://wdd.io/" target="_blank">Web Design DeCal</a></span>, led two Web Design Teams for <span class="org"><a href="https://innovativedesign.club/" target="_blank">Innovative Design</a></span>, and worked as a part-time User Researcher for <span class="org"><a href="https://zebraiq.com/" target="_blank">Zebra Intelligence</a></span>. In my free time, I love to do creative photography and cook. I also love meeting new people, so feel free to <span class="org"><a href="mailto:sheryl.chang@berkeley.edu">connect with me</a></span>!
+				<div class="intro-text" class="paragraph-text">
+					I've always been a creative at heart. As a child, I loved to draw and paint, but I wasn't confident artistically. In high school, I kept hearing that making a living as an artist would be very difficult, so I focused more on my classes and left creativity behind.
 				</div>
+				<div class="intro-text" class="paragraph-text">
+					Then, in college, I was lucky enough to take the <span class="org"><a href="https://wdd.io/" target="_blank">Web Design DeCal</a></span>, which exposed me to the world of design for the first time. I later TA'd for this class, led web design teams in <span class="org"><a href="https://innovativedesign.club/" target="_blank">Innovative Design</a></span>, and took various design classes to build my skillset.
+				</div>
+				<div class="intro-text" class="paragraph-text">
+					I'm currently working as a Project Coordinator at <span class="org"><a href="https://www.gene.com/" target="_blank">Genentech</a></span>. Although I love the company's mission, it has been very difficult for me not to be doing design work there and not to be challenged creatively. To continue to cultivate the design sensibility I developed in college, I have made a few <span class="org"><a href="https://www.instagram.com/p/B6Z52z5JY7d/" target="_blank">zines</a></span> and done a bit of freelance graphic design work over the past few months. But I want to make an impact with design full-time, which is why I'm <i>actively looking</i> to move into a <b>design-focused, creatively stimulating role</b>.
+				</div>
+				<div class="intro-text" class="paragraph-text">
+					In my free time, I've been listening to a podcast about prison called <span class="org"><a href="https://www.earhustlesq.com/" target="_blank">Ear Hustle</a></span>, learning how to make <span class="org"><a href="https://thewoksoflife.com/easy-scallion-pancakes/" target="_blank">Chinese green onion pancakes</a></span> using dumpling wrappers, and writing poetry on Wednesday nights at <span class="org"><a href="http://wolfmanhomerepair.com/" target="_blank">E.M. Wolfman Bookstore</a></span>. I love meeting new people, so feel free to <span class="org"><a href="mailto:sheryl.chang@berkeley.edu">reach out</a></span>! :-)
+				</div>
+
 				<!-- <div id="intro-text" class="paragraph-text">
-					In terms of what motivates me, I love a good challenge. And people - they are and have always been very important to me. Being able to have a positive impact on others is always very exciting to me.
+					In terms of what motivates me, I love a good challenge. And people - they are and have always been very important to me. I always find having a positive impact on others very exciting.
 				</div>
 				<div id="intro-text" class="paragraph-text">
 					In my time at Berkeley, I've been a TA for the <span class="org"><a href="https://wdd.io/" target="_blank">Web Design DeCal</a></span>, led two Web Design Teams for <span class="org"><a href="https://innovativedesign.club/" target="_blank">Innovative Design</a></span>, and worked as a part-time User Researcher for <span class="org"><a href="https://zebraiq.com/" target="_blank">Zebra Intelligence</a></span>. In my free time, I love to do creative photography, watch The Office, and cook. I also love meeting new people, so feel free to <span class="org"><a href="mailto:sheryl.chang@berkeley.edu">connect with me</a></span>!
@@ -124,5 +149,9 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- JavaScript tag -->
+	<script src="assets/js/about_script.js"></script>
+
 </body>
 </html>

@@ -5,18 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Be+Vietnam:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/photo_style.css">
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 </head>
 <body>
 	<div id="page-container">
 		<div id="title-background">
 			<div id="nav-bar">
 					<nav>
+						<div id="mobile-only-nav-button" onclick="toggleNav()">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
 						<ul id="menu">
 							<li id="home" class="menu-item">
 								<div class="link"><a href="index.html">Sheryl Chang</a></div>
 							</li>
 							<li id="resume" class="menu-item">
-								<div class="link"><a href="assets/files/resume.pdf" target="_blank">Resume</a></div>
+								<div class="link"><a href="assets/files/Sheryl-Chang-Resume.pdf" target="_blank">Resume</a></div>
 							</li>
 							<li id="work" class="menu-item">
 								<div id="work-link" class="link"><a href="work.html">Work</a></div>
@@ -27,18 +33,31 @@
 						</ul>
 					</nav>
 			</div>
+			<div id="mobile-only-nav-bar">
+				<div id="nav-text">
+					<ul>
+				        <li class="mobile-link"><a href="index.html">Home</a></li>
+				        <li class="mobile-link"><a href="about.html">About</a></li>
+				        <li class="mobile-link"><a href="work.html">Work</a></li>
+				        <li class="mobile-link"><a href="assets/files/Sheryl-Chang-Resume.pdf" target="_blank">Resume</a></li>
+				    </ul>
+				    <div id="email">
+				    	sheryl.chang@berkeley.edu
+				    </div>
+		    	</div>
+			</div>
 			<div id="title">Photography</div>
 		</div>
 		<div class="proj-container">
 			<div class="proj-photo">
-				<img src="assets/img/grad-photos/ethan.jpg">
+				<a href="photo/gradphoto.html"><img src="assets/img/grad-photos/img-1.jpg"></a>
 			</div>
 			<div class="proj-title">
 				<div class="title-text">
 					Grad Photos
 				</div>
 				<div class="proj-date">
-					SPRING 2018, SPRING 2019
+					SPRING 2019, SPRING 2018
 				</div>
 				<div class="text">
 					I've had the honor of taking graduation photos for many lovely individuals these past two years! Check out more of my portfolio here.  
@@ -59,6 +78,9 @@
 				<div class="text">
 					Some spreads I've made.  
 				</div>
+				<div class="text">
+					<i>Coming soon!</i>
+				</div>
 			</div>
 		</div>
 		<div class="proj-container">
@@ -75,8 +97,15 @@
 				<div class="text">
 					Taken over the past few years.  
 				</div>
+				<div class="text">
+					<i>Coming soon!</i>
+				</div>
 			</div>
 		</div>
 	</div>
+
+	<!-- JavaScript tag -->
+	<script src="assets/js/product_script.js"></script>
+	
 </body>
 </html>

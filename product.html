@@ -5,18 +5,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Be+Vietnam:100,100i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/product_style.css">
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
 </head>
 <body>
 	<div id="page-container">
 		<div id="title-background">
 			<div id="nav-bar">
 					<nav>
+						<div id="mobile-only-nav-button" onclick="toggleNav()">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+							<div class="bar3"></div>
+						</div>
 						<ul id="menu">
 							<li id="home" class="menu-item">
 								<div class="link"><a href="index.html">Sheryl Chang</a></div>
 							</li>
 							<li id="resume" class="menu-item">
-								<div class="link"><a href="assets/files/resume.pdf" target="_blank">Resume</a></div>
+								<div class="link"><a href="assets/files/Sheryl-Chang-Resume.pdf" target="_blank">Resume</a></div>
 							</li>
 							<li id="work" class="menu-item">
 								<div id="work-link" class="link"><a href="work.html">Work</a></div>
@@ -27,8 +33,41 @@
 						</ul>
 					</nav>
 			</div>
-			<div id="title">Product Design</div>
+			<div id="mobile-only-nav-bar">
+			<div id="nav-text">
+				<ul>
+			        <li class="mobile-link"><a href="index.html">Home</a></li>
+			        <li class="mobile-link"><a href="about.html">About</a></li>
+			        <li class="mobile-link"><a href="work.html">Work</a></li>
+			        <li class="mobile-link"><a href="assets/files/Sheryl-Chang-Resume.pdf" target="_blank">Resume</a></li>
+			    </ul>
+			    <div id="email">
+			    	sheryl.chang@berkeley.edu
+			    </div>
+		    </div>
+		</div>
+			<div id="title">Design</div>
 			<!-- <div id="title-block"></div> -->
+		</div>
+		<div class="proj-container">
+			<div class="proj-photo">
+				<a href="product/devie.html"><img src="assets/img/devie/second-iteration.png"></a>
+			</div>
+			<div class="proj-title">
+				<div class="title-text">
+					Helping parents keep their children entertained
+				</div>
+				<div class="tag-container">
+					<div class="product-tag">PRODUCT DESIGN</div>
+					<div class="visual-tag-2">VISUAL DESIGN</div>
+				</div>
+				<div class="proj-date">
+					SUMMER 2020
+				</div>
+				<div class="text">
+					A mobile app feature I designed to solve this problem: "Parents have a hard time keeping their children entertained."
+				</div>
+			</div>
 		</div>
 		<div class="proj-container">
 			<div class="proj-photo">
@@ -37,6 +76,10 @@
 			<div class="proj-title">
 				<div class="title-text">
 					Circle
+				</div>
+				<div class="tag-container">
+					<div class="product-tag">PRODUCT DESIGN</div>
+					<div class="visual-tag-2">VISUAL DESIGN</div>
 				</div>
 				<div class="proj-date">
 					SUMMER 2019
@@ -57,6 +100,10 @@
 				<div class="title-text">
 					OKurt
 				</div>
+				<div class="tag-container">
+					<div class="product-tag">PRODUCT DESIGN</div>
+					<div class="visual-tag-2">VISUAL DESIGN</div>
+				</div>
 				<div class="proj-date">
 					SUMMER 2019
 				</div>
@@ -70,12 +117,33 @@
 		</div>
 		<div class="proj-container">
 			<div class="proj-photo">
+				<a href="visual/dailydesign.html"><img src="assets/img/layouts.png"></a>
+			</div>
+			<div class="proj-title">
+				<div class="title-text">
+					100 Days of Design
+				</div>
+				<div class="visual-tag">VISUAL DESIGN</div>
+				<div class="proj-date">
+					MAY 2019 - JANUARY 2020
+				</div>
+				<div class="text">
+					A personal project I started to improve my skills in illustration and layout design.  
+				</div>
+				<div class="text">
+					My prompt for myself every day was: <i>Create a layout design about your day or your life using vector graphics and/or type.</i>
+				</div>
+			</div>
+		</div>
+		<div class="proj-container">
+			<div class="proj-photo">
 				<a href="product/corgibot.html"><img src="assets/img/corgibot/photoshop.png"></a>
 			</div>
 			<div class="proj-title">
 				<div class="title-text">
 					Corgi-Bot
 				</div>
+				<div class="product-tag">PRODUCT DESIGN</div>
 				<div class="proj-date">
 					FALL 2018
 				</div>
@@ -87,6 +155,61 @@
 				</div>
 			</div>
 		</div>
+		<div class="proj-container">
+			<div class="proj-photo">
+				<a href="visual/sugarice.html"><img src="assets/img/brand.png"></a>
+			</div>
+			<div class="proj-title">
+				<div class="title-text">
+					Sugar & Ice
+				</div>
+				<div class="visual-tag">VISUAL DESIGN</div>
+				<div class="proj-date">
+					SPRING 2019
+				</div>
+				<div class="text">
+					Sugar & Ice is a (hypothetical) homemade ice cream shop. This branding project consisted of a logo, tagline, business card, posters, and graphics.
+				</div>
+			</div>
+		</div>
+		<div class="proj-container">
+			<div class="proj-photo">
+				<a href="visual/shoes-off-pls.html"><img src="assets/img/shoes-off-pls/shoes-final-3.png"></a>
+			</div>
+			<div class="proj-title">
+				<div class="title-text">
+					Shoes Off Pls
+				</div>
+				<div class="visual-tag">VISUAL DESIGN</div>
+				<div class="proj-date">
+					WINTER 2020
+				</div>
+				<div class="text">
+					I created some fun social media content for a new podcast called <i>Shoes Off Pls</i>.   
+				</div>
+			</div>
+		</div>
+		<div class="proj-container">
+			<div class="proj-photo">
+				<a href="visual/genentech.html"><img src="assets/img/genentech/design-5.png"></a>
+			</div>
+			<div class="proj-title">
+				<div class="title-text">
+					Designs @ Genentech
+				</div>
+				<div class="visual-tag">VISUAL DESIGN</div>
+				<div class="proj-date">
+					FALL 2019
+				</div>
+				<div class="text">
+					I helped my department at Genentech make some 2019 end-of-year designs! These include custom wine bottle labels for our holiday gifts and certificate designs for our department awards.
+				</div>
+			</div>
+		</div>
 	</div>
+
+	<!-- JavaScript tag -->
+	<script src="assets/js/product_script.js"></script>
+
 </body>
 </html>
