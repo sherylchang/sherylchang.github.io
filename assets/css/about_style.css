@@ -76,14 +76,6 @@ nav {
 	text-align: center;
 }
 
-.paragraph-text {
-	font-family: 'Be Vietnam', sans-serif;
-	font-size: 1em;
-	letter-spacing: 1px;
-	line-height: 160%;
-	margin-top: 20px;
-}
-
 #intro-title {
 	text-align: left;
 	margin-top: 50px;
@@ -119,13 +111,51 @@ nav {
 	transition-duration: 0.2s;
 }
 
-#spheres-text {
+#first-subtitle {
+	margin-top: 25px;
+}
+
+.subtitle {
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	font-weight: bold;
 	width: 550px;
 	margin: 0 auto;
-	margin-top: 30px;
-	margin-bottom: 70px;
+	text-align: left
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+/*.paragraph-text {
+	font-family: 'Be Vietnam', sans-serif;
 	font-size: 1em;
+	letter-spacing: 1px;
+	line-height: 160%;
+	margin-top: 20px;
+}*/
+
+.paragraph-text {
+	font-family: 'Be Vietnam', sans-serif;
+	font-size: 1em;
+	letter-spacing: 1px;
+	width: 550px;
+	margin: 0 auto;
 	text-align: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#skills {
+	width: 225px;
+}
+
+#skills-2 {
+	width: 150px;
+}
+
+#skills-3 {
+	width: 100px;
 }
 
 /*#motivations-text {
@@ -148,12 +178,6 @@ nav {
 	margin-top: 15px;
 	margin-bottom: 30px;
 }*/
-
-#spheres-image {
-	width: 600px;
-	height: 500px;
-	margin: 0 auto;
-}
 
 .capabilities-title {
 	margin-top: 100px;
