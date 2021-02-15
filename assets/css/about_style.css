@@ -111,20 +111,16 @@ nav {
 	transition-duration: 0.2s;
 }
 
-#first-subtitle {
-	margin-top: 25px;
-}
-
 .subtitle {
 	font-family: 'Be Vietnam', sans-serif;
 	font-size: 1.5em;
 	letter-spacing: 1px;
 	font-weight: bold;
 	width: 550px;
-	margin: 0 auto;
-	text-align: left
 	margin-top: 10px;
 	margin-bottom: 5px;
+	margin: 0 auto;
+	text-align: left
 }
 
 /*.paragraph-text {
