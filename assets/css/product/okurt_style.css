@@ -190,6 +190,10 @@ video {
 	font-size: 0.9em;
 }
 
+.centered {
+  margin: 0 auto;
+}
+
 #resize img {
 	display: block;
   	max-width:650px;
